@@ -1,17 +1,18 @@
-REST APIs Employee Management System using Spring Boot
-***********************************************************
-Spring Boot Project Architecture:
+<h2>REST APIs Employee Management System using Spring Boot</h2>
 
-Post Client ⬄ Controller ⬄ Server ⬄ DAO ⬄ DB
-***********************************************************
+Spring Boot Project Architecture:
+<h2>Post Client ⬄ Controller ⬄ Server ⬄ DAO ⬄ DB</h2>
+
 Rest Client should be able to:
-➪ Get a list of employee
-➪ Get a single employee by id
-➪ Create a new employee
-➪ Update an existing employee
-➪ Delete an employee
-**********************************
-REST APIs for Employee Resource
+<ol>
+<li>Get a list of employee</li>
+<li>Get a single employee by id</li>
+<li>Create a new employee</li>
+<li>Update an existing employee</li>
+<li>Delete an employee</li>
+</ol>
+
+REST APIs for Employee Resource:
 
 |  HTTP Method  |       URL Path     |  Status Code  |           Description            |
 | :-------------|:-------------------| :-------------| :--------------------------------|
@@ -20,5 +21,3 @@ REST APIs for Employee Resource
 | Get           | /api/employees     |  201 (Created)| Create a new employee            |
 | Get           | /api/employees/{id}|  200 (OK)     | Update existing employee with id |
 | Get           | /api/employees/{id}|  200 (OK)     | Delete and employee by id        |
-
-*********************************************************************************************
