@@ -7,6 +7,7 @@ import net.springboot.ems.mapper.EmployeeMapper;
 import net.springboot.ems.repository.EmployeeRepository;
 import net.springboot.ems.service.EmployeeService;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.ResourceAccessException;
 
 @Service
 @AllArgsConstructor
@@ -19,4 +20,13 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee savesEmployee = employeeRepository.save(employee);
         return EmployeeMapper.mapToEmployeeDto(employee);
     }
+
+    @Override
+    public EmployeeDto getEmployeeById(Long employeeId) {
+        Employee employee = employeeRepository.findById(employeeId)
+                .orElseThrow(() ->
+                        new ResourceAccessException(("Employee is not exists with given id : " + employeeId)));
+        return EmployeeMapper.mapToEmployeeDto(employee);
+    }
+
 }
