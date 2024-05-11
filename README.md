@@ -1,7 +1,7 @@
 <h2>REST APIs Employee Management System using Spring Boot</h2>
 
 Spring Boot Project Architecture:
-<h2>Post Client ⬄ Controller ⬄ Server ⬄ DAO ⬄ DB</h2>
+<h5>Post Client ⬄ Controller ⬄ Server ⬄ DAO ⬄ DB</h5>
 
 Rest Client should be able to:
 <ol>
