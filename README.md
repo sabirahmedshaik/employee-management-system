@@ -18,6 +18,6 @@ REST APIs for Employee Resource:
 | :-------------|:-------------------| :-------------| :--------------------------------|
 | Get           | /api/employees     |  200 (OK)     | Get all employees                |
 | Get           | /api/employees/{id}|  200 (OK)     | Get single employee by id        |
-| Get           | /api/employees     |  201 (Created)| Create a new employee            |
-| Get           | /api/employees/{id}|  200 (OK)     | Update existing employee with id |
-| Get           | /api/employees/{id}|  200 (OK)     | Delete and employee by id        |
+| Post          | /api/employees     |  201 (Created)| Create a new employee            |
+| Put           | /api/employees/{id}|  200 (OK)     | Update existing employee with id |
+| Delete        | /api/employees/{id}|  200 (OK)     | Delete and employee by id        |
